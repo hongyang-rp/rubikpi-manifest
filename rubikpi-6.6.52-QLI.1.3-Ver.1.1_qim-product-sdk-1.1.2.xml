@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://github.com/quic-yocto" name="github" review="github.com"/>
@@ -6,7 +7,10 @@
   <remote fetch="https://github.com/Linaro" name="Linaro" review="github.com"/>
   <remote fetch="https://github.com/meta-rust" name="rust" review="github.com"/>
   <remote fetch="https://github.com/uptane" name="updater" review="github.com"/>
+  <remote fetch="https://github.com/ros" name="ros" review="github.com"/>
+  <remote fetch="https://github.com/meta-qt5" name="meta-qt5" review="github.com"/>  
   <remote fetch="https://github.com/rubikpi-ai" name="rubikpi" review="github.com"/>
+  <remote fetch="https://git.codelinaro.org" name="codelinaro" review="git.codelinaro.org"/>
   <default remote="github" revision="refs/heads/kirkstone" sync-j="8"/>
 
   <project name="meta-qcom" path="layers/meta-qcom" remote="Linaro" revision="a78e99b89ad483cc8b643165fd3bd4428b3ec1cc" upstream="refs/heads/kirkstone"/>
@@ -18,11 +22,20 @@
   <project name="meta-rust" path="layers/meta-rust" remote="rust" revision="9611b42d73c7546c3d845da380943a0a4f4205f0" upstream="refs/heads/master"/>
   <project name="meta-updater" path="layers/meta-updater" remote="updater" revision="3d57c37509fef259c5a5c150b88466ff367e305f" upstream="refs/heads/kirkstone"/>
 
-  <project name="meta-rubikpi" path="layers/meta-rubikpi" remote="rubikpi" revision="ec4226a73b8b27edbf056a5006d8900155115fed"/>
-
   <project name="meta-qcom-hwe" path="layers/meta-qcom-hwe" revision="7793db16af3d5c89b6c94fdb4d5c720d9ebfdc33" upstream="refs/heads/kirkstone"/>
   <project name="meta-qcom-distro" path="layers/meta-qcom-distro" revision="2125ac8170b6e236771492ee9933da2be2cf3851" upstream="refs/heads/kirkstone">
     <linkfile dest="setup-environment" src="set_bb_env.sh"/>
   </project>
+  
+  <project name="meta-rubikpi" path="layers/meta-rubikpi" remote="rubikpi" revision="0746e0d73bc19abcaca5175e7fddcd70af9d1388" upstream="main"/>
+  <project name="meta-ros" path="layers/meta-ros" remote="ros" revision="3b2995fb2d822afa2d0a515ff19b910a3ef1510c" upstream="kirkstone"/>
+  <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566" upstream="kirkstone"/>
+  <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="rubikpi" revision="173f9586993ecbb9727db8e08ac7432590cea4ce" upstream="v6.58-fc2"/>
+  <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="c2e7e27f0cf87ea88d5357409186972a1997f8ce" upstream="BP-BINs"/>
+  <project name="prebuilt" path="src/vendor/qcom/proprietary/chi-cdk-kt" remote="rubikpi" revision="2f417e4593dd04eab44b40a4324d41c4c8e47a49" upstream="chicdk-kt"/>
+  <project name="device-tree" path="src/vendor/qcom/opensource/kernel-6.6/arch/arm64/boot/dts/thundercomm" remote="rubikpi" revision="7afff4e8cfe6b691071ed89e59dd07be9a3c3ac3" upstream="main"/>
+  <project name="display-drivers" path="src/vendor/qcom/opensource/kernel-6.6/techpack/display" remote="rubikpi" revision="c7b773e73e1fd26ee4964171a8d52487ea97b182" upstream="main"/>
+  
+  <project name="clo/le/platform/vendor/opensource/camera-kernel" path="src/vendor/qcom/opensource/kernel-6.6/techpack/camera-kernel" remote="codelinaro" revision="e72414038e85e755aed60d53118e0c529a305649" upstream="camera-kernel.qclinux.1.0.r1-re"/>
+  <project name="meta-qcom-qim-product-sdk" path="layers/meta-qcom-qim-product-sdk" remote="github" revision="47c681741cafa3edc7949f878013448e03c6911c" upstream="qcom-6.6.52-QLI.1.3-Ver.1.1_qim-product-sdk-1.1.2"/>
 </manifest>
-
