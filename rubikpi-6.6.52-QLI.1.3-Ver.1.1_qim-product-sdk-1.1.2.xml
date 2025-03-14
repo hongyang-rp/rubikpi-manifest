@@ -31,7 +31,7 @@
   </project>
   <project name="meta-rubikpi-extras" path="layers/meta-rubikpi-extras" remote="rubikpi" revision="2d30f6a4ad4c52cf774d783243ffd5c2c2ef3380" upstream="main"/>
   <project name="rubikpi-script" path="rubikpi" remote="rubikpi" revision="4a3ca244fd0f3cb6b058bd219a6ef4bfe9217a9f" upstream="yocto_kirkstone">
-    <linkfile dest="rubikpi_build.sh" src="rubikpi_build.sh"/>
+    <linkfile dest="rubikpi_build.sh" src="tools/build_script/common/rubikpi_build.sh"/>
   </project>
   <project name="meta-ros" path="layers/meta-ros" remote="ros" revision="b4db6314bae1c78498158e267200a9c15a739cad" upstream="kirkstone"/>
   <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566" upstream="kirkstone"/>
