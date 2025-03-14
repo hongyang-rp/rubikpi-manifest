@@ -25,9 +25,11 @@
   <project name="meta-qcom-distro" path="layers/meta-qcom-distro" revision="2125ac8170b6e236771492ee9933da2be2cf3851" upstream="refs/heads/kirkstone">
     <linkfile dest="setup-environment" src="set_bb_env.sh"/>
   </project>
-  
-  <project name="meta-rubikpi" path="layers/meta-rubikpi" remote="rubikpi" revision="0746e0d73bc19abcaca5175e7fddcd70af9d1388" upstream="main"/>
-  <project name="meta-ros" path="layers/meta-ros" remote="ros" revision="3b2995fb2d822afa2d0a515ff19b910a3ef1510c" upstream="kirkstone"/>
+
+  <project name="meta-rubikpi" path="layers/meta-rubikpi" remote="rubikpi" revision="7ad831a06041805ec1e165b92ffdad21015ff042" upstream="main"/>
+    <linkfile dest="setup-environment_RUBIKPi" src="set_bb_env.sh"/>
+  <project name="meta-rubikpi-extras" path="layers/meta-rubikpi-extras" remote="rubikpi" revision="2d30f6a4ad4c52cf774d783243ffd5c2c2ef3380" upstream="main"/>
+  <project name="meta-ros" path="layers/meta-ros" remote="ros" revision="b4db6314bae1c78498158e267200a9c15a739cad" upstream="kirkstone"/>
   <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566" upstream="kirkstone"/>
   <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="rubikpi" revision="173f9586993ecbb9727db8e08ac7432590cea4ce" upstream="v6.58-fc2"/>
   <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="c2e7e27f0cf87ea88d5357409186972a1997f8ce" upstream="BP-BINs"/>
