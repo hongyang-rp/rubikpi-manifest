@@ -41,6 +41,6 @@
   <project name="device-tree" path="src/vendor/qcom/opensource/kernel-6.6/arch/arm64/boot/dts/thundercomm" remote="rubikpi" revision="7afff4e8cfe6b691071ed89e59dd07be9a3c3ac3" upstream="main"/>
   <project name="display-drivers" path="src/vendor/qcom/opensource/kernel-6.6/techpack/display" remote="rubikpi" revision="c7b773e73e1fd26ee4964171a8d52487ea97b182" upstream="main"/>
   
-  <project name="clo/le/platform/vendor/opensource/camera-kernel" path="src/vendor/qcom/opensource/kernel-6.6/techpack/camera-kernel" remote="codelinaro" revision="e72414038e85e755aed60d53118e0c529a305649" upstream="camera-kernel.qclinux.1.0.r1-re"/>
-  <project name="meta-qcom-qim-product-sdk" path="layers/meta-qcom-qim-product-sdk" remote="github" revision="47c681741cafa3edc7949f878013448e03c6911c" upstream="qcom-6.6.52-QLI.1.3-Ver.1.1_qim-product-sdk-1.1.2"/>
+  <project name="clo/le/platform/vendor/opensource/camera-kernel" path="src/vendor/qcom/opensource/kernel-6.6/techpack/camera-kernel" remote="codelinaro" revision="e72414038e85e755aed60d53118e0c529a305649" upstream="camera-kernel.qclinux.1.0.r1-rel"/>
+  <project name="meta-qcom-qim-product-sdk" path="layers/meta-qcom-qim-product-sdk" remote="github" revision="47c681741cafa3edc7949f878013448e03c6911c" upstream="refs/heads/kirkstone"/>
 </manifest>
